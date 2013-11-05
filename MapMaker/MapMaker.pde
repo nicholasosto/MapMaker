@@ -6,7 +6,7 @@ void setup()
 {
   size(400,400);
   
-  testMap = new Map2D(5,10);
+  testMap = new Map2D(10,10);
   
   
 }
@@ -48,13 +48,13 @@ void keyReleased()
   }
   if (key == 's')
   {
-    testMap.saveMap("Saved_map.txt");
+    testMap.saveMap("Saved_map.tmap");
     println("Map Saved");
   }
   
   if (key == 'l')
   {
-    testMap.loadMap("Saved_map.txt");
+    testMap.loadMap("Saved_map.tmap");
     println("Map Loaded");
   }
 }

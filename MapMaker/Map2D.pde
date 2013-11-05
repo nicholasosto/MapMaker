@@ -13,7 +13,6 @@ class Map2D
     this.tiles = new Tile[cols][rows];
     
     initTiles();
-    
   }
   
   Map2D(String filename)
