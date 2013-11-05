@@ -76,19 +76,17 @@ class Map2D
     this.rows = int(map[0].substring(row_index+2,end_index));
     
     tiles = new Tile[this.cols][this.rows];
-    
-    
-      
-    
+
     initTiles();
     
     for(int i = 1; i < map.length; i++)
     {
+      
       temp_row_data = split(map[i],',');
+      
       for(int j=0;j<temp_row_data.length;j++)
       {
-        println("i = ",i,"j = ",j);
-          tiles[j][i-1].setProp("traversable", float(temp_row_data[j]));
+         tiles[j][i-1].setProp("traversable", float(temp_row_data[j]));
       }
     }
 

@@ -6,7 +6,7 @@ void setup()
 {
   size(400,400);
   
-  testMap = new Map2D(10,10);
+  testMap = new Map2D(20,20);
   
   
 }
@@ -34,9 +34,7 @@ void mouseClicked()
   {
     testMap.tiles[col][row].setProp("traversable",1);
   }
-  
-  
-  println("Col: ",col,"Row: ",row);
+
 }
 
 void keyReleased()
